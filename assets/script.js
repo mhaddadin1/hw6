@@ -4,7 +4,7 @@ const searchCities = [];
 
 // api fetch
 function handleCoords(searchCity) {
-  const fetchUrl = `http://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=4b9f7dc3f8536150bc0eb915e8e4a81b`;
+  const fetchUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=4b9f7dc3f8536150bc0eb915e8e4a81b`;
 
   fetch(fetchUrl)
     .then(function (response) {
