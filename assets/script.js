@@ -42,7 +42,7 @@ function handleCurrentWeather(coordinates, city) {
 
 // display current day weather for city
 function displayCurrentWeather(currentCityData, cityName) {
-  let weatherIcon = `http://openweathermap.org/img/wn/${currentCityData.weather[0].icon}.png`;
+  let weatherIcon = `https://openweathermap.org/img/wn/${currentCityData.weather[0].icon}.png`;
 
   document.querySelector(
     "#currentWeather"
@@ -73,7 +73,7 @@ function displayFiveDayWeather(fiveDayCityData) {
   document.querySelector("#fiveDayWeather").innerHTML = "";
 
   cityData.forEach((day) => {
-    let weatherIcon = `http://openweathermap.org/img/wn/${day.weather[0].icon}.png`;
+    let weatherIcon = `https://openweathermap.org/img/wn/${day.weather[0].icon}.png`;
 
     document.querySelector(
       "#fiveDayWeather"
